@@ -221,9 +221,9 @@ group.a.dm.hist <- ggplot(group.a.dmp.results, aes(x = st.rank, y = deltaB, colo
 
 group.a.hist <- ggplot(group.a.str.comparisons[[1]], aes(x = st.rank, y = deltaB, color = Status, fill = Status)) +
   geom_col() +
-  scale_color_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 < Δβ ≤ -0.1", "Δβ < -0.1"),
+  scale_color_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 > Δβ ≥ -0.1", "Δβ < -0.1"),
                      values = c("#FF6363", "#FB9A99", "#A6CEE3", "#65B3DB")) +
-  scale_fill_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 < Δβ ≤ -0.1", "Δβ < -0.1"),
+  scale_fill_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 > Δβ ≥ -0.1", "Δβ < -0.1"),
                     values = c("#FF6363", "#FB9A99", "#A6CEE3", "#65B3DB")) +
   xlab("Rank") + ylab ("Δβ") + ggtitle("Subtelomeric Probes - 11787M vs. 11787IP1 & 71663IPII") + labs(tag = "5") +
   annotate(geom = "text", x = 525, y = 0.72, size = 4, color = "#CC1B1B", label = hypr.lab) +
@@ -245,9 +245,9 @@ group.a.hist <- ggplot(group.a.str.comparisons[[1]], aes(x = st.rank, y = deltaB
 
 group.b.hist <- ggplot(group.b.str.comparisons[[1]], aes(x = st.rank, y = deltaB, color = Status, fill = Status)) +
   geom_col() +
-  scale_color_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 < Δβ ≤ -0.1", "Δβ < -0.1"),
+  scale_color_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 > Δβ ≥ -0.1", "Δβ < -0.1"),
                      values = c("#FF6363", "#FB9A99", "#A6CEE3", "#65B3DB")) +
-  scale_fill_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 < Δβ ≤ -0.1", "Δβ < -0.1"),
+  scale_fill_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 > Δβ ≥ -0.1", "Δβ < -0.1"),
                     values = c("#FF6363", "#FB9A99", "#A6CEE3", "#65B3DB")) +
   xlab("Rank") + ylab ("Δβ") + ggtitle("Subtelomeric Probes - 36149M vs. 36149IP") + labs(tag = "6") +
   annotate(geom = "text", x = 525, y = 0.60, size = 4, color = "#CC1B1B", label = hypr.lab) +
@@ -269,9 +269,9 @@ group.b.hist <- ggplot(group.b.str.comparisons[[1]], aes(x = st.rank, y = deltaB
 
 group.c.hist <- ggplot(group.c.str.comparisons[[1]], aes(x = st.rank, y = deltaB, color = Status, fill = Status)) +
   geom_col() +
-  scale_color_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 < Δβ ≤ -0.1", "Δβ < -0.1"),
+  scale_color_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 > Δβ ≥ -0.1", "Δβ < -0.1"),
                      values = c("#FF6363", "#FB9A99", "#A6CEE3", "#65B3DB")) +
-  scale_fill_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 < Δβ ≤ -0.1", "Δβ < -0.1"),
+  scale_fill_manual(labels = c("Δβ > 0.1", "0.1 ≥ Δβ > 0.0", "0.0 > Δβ ≥ -0.1", "Δβ < -0.1"),
                     values = c("#FF6363", "#FB9A99", "#A6CEE3", "#65B3DB")) +
   xlab("Rank") + ylab ("Δβ") + ggtitle("Subtelomeric Probes - 50543M vs. 50543IPI") + labs(tag = "7") +
   annotate(geom = "text", x = 525, y = 0.72, size = 4, color = "#CC1B1B", label = hypr.lab) +
